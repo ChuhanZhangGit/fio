@@ -302,7 +302,7 @@ static void _fio_rbd_finish_aiocb(rbd_completion_t comp, void *data)
 	struct fio_rbd_iou *fri = data;
 	struct io_u *io_u = fri->io_u;
 	ssize_t ret;
-
+	printf("%s", __func__);
 	/*
 	 * Looks like return value is 0 for success, or < 0 for
 	 * a specific error. So we have to assume that it can't do

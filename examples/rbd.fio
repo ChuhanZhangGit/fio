@@ -13,8 +13,9 @@
 #write_lat_log=write_lat_log
 ioengine=rbd
 clientname=admin
+runtime=10s
 pool=rbd
-rbdname=fio_test
+rbdname=test_fio
 rw=randwrite
 bs=4k
 
